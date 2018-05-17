@@ -19,7 +19,7 @@ def get_news1():
 
 def send_news():
     try:
-        my_friend = bot.friends().search(u'英灿')[0]  # 你朋友的微信名称，不是备注，也不是微信帐号。
+        my_friend = bot.friends().search(u'葡萄')[0]  # 你朋友的微信名称，不是备注，也不是微信帐号。
         my_friend.send(get_news1()[0])
         my_friend.send(get_news1()[1][5:])
         my_friend.send(u"来自爸爸的心灵鸡汤！")
